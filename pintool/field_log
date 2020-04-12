@@ -1,0 +1,20 @@
+[TraceAnalyzer] total trace log: 88833
+[Trace Reduce] before instruction count: 1105
+[Trace Reduce] before trace log count: 69644
+[Trace Reduce] after instruction count: 0
+[Trace Reduce] after trace log count: 31376
+[Trace Reduce] Finished.
+[Process Field Offset] before ins count: 31376
+[Process Field Offset] after ins count: 31376
+[Process Field Offset] Finished.
+[Field Information]
+[Make Field] Finished.
+[FieldTree] Generation Field Transition Tree Finished.
+[FieldTree] 10839 instructions are skipped
+[FieldTree] 22 instructions are unsupported
+[Constraint Generation] query count: 338 time: 2196776 solving time: 539447
+[Boundary Generation] query count: 1493 time: 12443589 solving time: 6575685
+[RESULT] total cmp: 1320 simple cmp count: 1151
+[RESULT] total add: 440 unsat add count: 16
+[RESULT] total sub: 844 unsat sub count: 34
+[RESULT] total mul: 2 unsat mul count: 0
