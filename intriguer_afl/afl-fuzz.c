@@ -5368,11 +5368,6 @@ static u8 fuzz_one(char** argv) {
     // printf("cmd: %s\n", cmd);
     system(cmd);
     ck_free(cmd);
-
-    cmd = alloc_printf("rm -r %s", temp_dir);
-
-    system(cmd);
-    ck_free(cmd);
   }
 
   if(queue_cur->fields == NULL)
@@ -5381,6 +5376,10 @@ static u8 fuzz_one(char** argv) {
   ck_free(field_name);
   ck_free(fname);
 
+  u8 *cmd = alloc_printf("rm -r %s", temp_dir);
+
+  system(cmd);
+  ck_free(cmd); 
 
   /*********************
    * PERFORMANCE SCORE *
